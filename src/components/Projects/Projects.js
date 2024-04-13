@@ -6,6 +6,8 @@ import nestJsBoilerPlate from "../../Assets/Projects/nestjs_boiler_plate.png";
 import expressBoilerPlate from "../../Assets/Projects/expressjs_boiler_plate.png";
 import myChatbot from "../../Assets/Projects/personal_chatbot.jpeg";
 import multiplePdfChatbot from "../../Assets/Projects/multiple_pdf_chatbot.png";
+import portfolio from "../../Assets/Projects/portfolio.png";
+
 
 function Projects() {
   return (
@@ -61,6 +63,16 @@ function Projects() {
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio}
+              isBlog={false}
+              title="My Portfolio"
+              description="This is only frontend project created on react, showcasing my portfolio"
+              ghLink="https://github.com/Rehman-Akram/portfolio"
+              demoLink="asd"
+            />
+          </Col>
           
         </Row>
       </Container>
