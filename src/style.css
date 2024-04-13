@@ -744,3 +744,12 @@ button:focus {
 .round-image {
   border-radius: 50%;
 }
+
+.styles-module_calendar__sT1ND {
+  max-width: 100% !important;
+  width: 2000px !important
+}
+
+.react-pdf__Page__textContent.textLayer {
+  display: none;
+}
