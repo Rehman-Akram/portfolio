@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import nestJsBoilerPlate from "../../Assets/Projects/nestjs_boiler_plate.png";
 import expressBoilerPlate from "../../Assets/Projects/expressjs_boiler_plate.png";
 import myChatbot from "../../Assets/Projects/personal_chatbot.jpeg";
 import multiplePdfChatbot from "../../Assets/Projects/multiple_pdf_chatbot.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
+import ProjectCard from "../Cards/Cards";
 
 
 function Projects() {

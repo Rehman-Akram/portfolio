@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Particle from "../Particle";
-import ProjectCard from "../Projects/ProjectCards";
 import eventLoop from "../../Assets/Blogs/Event_loop_node_js.png"
 import microservices from "../../Assets/Blogs/monolithic_microservices_architecture.jpeg"
+import ProjectCard from "../Cards/Cards";
 
 function Blogs() {
   return (
