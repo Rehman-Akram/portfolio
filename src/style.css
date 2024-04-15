@@ -753,3 +753,16 @@ button:focus {
 .react-pdf__Page__textContent.textLayer {
   display: none;
 }
+
+.small-text {
+  font-size: 30px; /* Adjust the font size as needed */
+}
+
+.hover-text {
+  display: none;
+}
+
+.tech-icons:hover .hover-text {
+  display: inline;
+  font-size: 10px
+}
