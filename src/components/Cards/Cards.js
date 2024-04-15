@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { GoOrganization } from "react-icons/go";
 
 function Cards(props) {
   return (
@@ -13,10 +14,10 @@ function Cards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
+        {props.ghLink && <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
+        </Button>}  
         {"\n"}
         {"\n"}
 
@@ -33,6 +34,14 @@ function Cards(props) {
             {"Demo"}
           </Button>
         )}
+        {props.isAchievement && <Card.Footer><div
+            variant="primary"
+            style={{ marginLeft: "10px" }}
+          >
+            <GoOrganization /> &nbsp;
+            {props.isAchievement}
+          </div></Card.Footer>}
+        
       </Card.Body>
     </Card>
   );

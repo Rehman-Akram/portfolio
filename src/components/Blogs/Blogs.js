@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import eventLoop from "../../Assets/Blogs/Event_loop_node_js.png"
 import microservices from "../../Assets/Blogs/monolithic_microservices_architecture.jpeg"
-import ProjectCard from "../Cards/Cards";
+import BlogCard from "../Cards/Cards";
 
 function Blogs() {
   return (
@@ -19,7 +19,7 @@ function Blogs() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            <ProjectCard
+            <BlogCard
               imgPath={eventLoop}
               isBlog={true}
               title="Internals of Node-JS Event loop"
@@ -29,7 +29,7 @@ function Blogs() {
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            <BlogCard
               imgPath={microservices}
               isBlog={true}
               title="Monolithic Vs Microservice Architecture"
