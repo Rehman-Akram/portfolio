@@ -766,3 +766,12 @@ button:focus {
   display: inline;
   font-size: 10px
 }
+
+.education {
+  padding-bottom: 50px
+ 
+}
+
+.education h3 {
+  margin-bottom: 5px; 
+}

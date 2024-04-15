@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Education from "../Education/Education";
 
 function About() {
   return (
@@ -46,6 +47,34 @@ function About() {
         <Toolstack />
 
         <Github />
+
+        <h1 className="project-heading education">
+          My <strong className="purple">Education</strong>
+        </h1>
+        <Education
+          institution="COMSATS LAHORE"
+          degree="Masters"
+          fieldOfStudy="Computer Science"
+          year="2018-2021"
+        />
+        <Education
+          institution="UET LAHORE"
+          degree="Masters"
+          fieldOfStudy="Telecom Networks"
+          year="2014-2016"
+        />
+        <Education
+          institution="UET LAHORE, FSD Campus"
+          degree="Engineering"
+          fieldOfStudy="Electronics & Communication"
+          year="2006-2010"
+        />
+        <Education
+          institution="GCU Lahore"
+          degree="F.Sc"
+          fieldOfStudy="Pre-Engineering"
+          year="2004-2006"
+        />
       </Container>
     </Container>
   );
