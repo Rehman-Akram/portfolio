@@ -110,6 +110,12 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
       <span className="small-text">Generative AI</span>
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <span className="small-text">Langchain</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <span className="small-text">Vector DBs</span>
+      </Col>
     </Row>
   );
 }

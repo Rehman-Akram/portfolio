@@ -96,13 +96,13 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/achievements"
+                to="/certificates"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFileDone 
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Achievements
+                Certificates
               </Nav.Link>
             </Nav.Item>
 

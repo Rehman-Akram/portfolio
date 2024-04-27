@@ -41,7 +41,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={myChatbot}
               isBlog={false}
@@ -50,7 +50,7 @@ function Projects() {
               ghLink=""
               demoLink="asd"              
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -58,8 +58,8 @@ function Projects() {
               isBlog={false}
               title="Multiple PDFs chatbot"
               description="In this project, user can train chatbot on manual pdfs. Provide PDFs runtime and bot will answer on the basis of pdfs uploaded. Used streamlit as frontend."
-              ghLink=""
-              demoLink="asd"
+              ghLink="https://github.com/Rehman-Akram/chat-with-multiple-pdfs"
+              demoLink="http://54.254.9.91:8501/"
             />
           </Col>
 
