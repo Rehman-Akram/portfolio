@@ -59,7 +59,7 @@ function Projects() {
               title="Multiple PDFs chatbot"
               description="In this project, user can train chatbot on manual pdfs. Provide PDFs runtime and bot will answer on the basis of pdfs uploaded. Used streamlit as frontend."
               ghLink="https://github.com/Rehman-Akram/chat-with-multiple-pdfs"
-              demoLink="http://54.254.9.91:8501/"
+              demoLink="http://54.254.151.238:8501"
             />
           </Col>
 
@@ -70,7 +70,7 @@ function Projects() {
               title="My Portfolio"
               description="This is only frontend project created on react, showcasing my portfolio"
               ghLink="https://github.com/Rehman-Akram/portfolio"
-              demoLink="asd"
+              demoLink="https://d263l9642rjt91.cloudfront.net"
             />
           </Col>
           
