@@ -8,12 +8,13 @@ import { GoOrganization } from "react-icons/go";
 function Cards(props) {
   return (
     <Card className="project-card-view d-flex flex-column h-100">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      {props.imgPath && <Card.Img variant="top" src={props.imgPath} alt="card-img" />}
       <Card.Body className="d-flex flex-column flex-grow-1">
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
+        {props.tools && <div style={{textAlign: "left"}}><strong><u>Stack:</u></strong> {props.tools}</div>}
         <div className="mt-auto"> {/* Add mt-auto here to push buttons to the bottom */}
           {props.ghLink && (
             <Button variant="primary" href={props.ghLink} target="_blank">
