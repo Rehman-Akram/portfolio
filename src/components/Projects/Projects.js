@@ -21,11 +21,21 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="Project - Global Care Finder"
+              description="Worked as Backend Developer + Team Lead - A comprehensive tool for online appointment and chat system. It provides a patient to book an appointment with doctor as per doctor's available time slots, further doctor and patient can chat once appointment is booked. Patient can find doctor on the basis of location, doctor's expertise, qualification, etc."
+              tools='React-JS, Nest-JS, Postgresql, AWS, Typeorm, Sockets, Typescript'
+              isAchievement="Focusteck"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
               title="Project - Helphive"
-              description="Working as full stack developer (MEAN). Live customized chatting product build from scratch. It contains both admin panel and public chatbots for specific domain. These chatbots can be created, updated and trained on custom data."
+              description="Worked as full stack developer (MEAN). Live customized chatting product build from scratch. It contains both admin panel and public chatbots for specific domain. These chatbots can be created, updated and trained on custom data."
               tools='Typescript, Nest-JS, Postrgresql, Typeorm, Dynamo Db, Open Ai, AWS, Sockets, Angular, Bootstrap'
               isAchievement="Focusteck"
             />
@@ -35,7 +45,7 @@ function Projects() {
             <ProjectCard
               isBlog={false}
               title="Project - Ideawake"
-              description="Working as full stack developer (MEAN). Its an idea management platform live product which is proven to transform ideas to impact. It is completely dynamic and can be updated as per customer needs. Created new features, resolved bugs, Node and typeorm version upgradation etc."
+              description="Worked as full stack developer (MEAN). Its an idea management platform live product which is proven to transform ideas to impact. It is completely dynamic and can be updated as per customer needs. Created new features, resolved bugs, Node and typeorm version upgradation etc."
               tools='Microservices Architecture, Redis, Nest-JS, Postgresql, Mongo DB, Angular, Sockets, Open Ai, Bootstrap, Elastic Search, Open Search,  AWS, Dockers'
               isAchievement="Focusteck"
             />
