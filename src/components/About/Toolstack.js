@@ -4,7 +4,6 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiSlack,
-  SiMacos,
   SiGithub,
   SiJira,
   SiClickup,
@@ -18,10 +17,6 @@ import {
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-        <span className="hover-text">MAC</span>
-      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
         <span className="hover-text">VS Code</span>
