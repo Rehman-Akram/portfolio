@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import eventLoop from "../../Assets/Blogs/Event_loop_node_js.png"
 import microservices from "../../Assets/Blogs/monolithic_microservices_architecture.jpeg"
+import grpc from "../../Assets/Blogs/microservice-architecture.png"
 import BlogCard from "../Cards/Cards";
 
 function Blogs() {
@@ -35,6 +36,16 @@ function Blogs() {
               title="Monolithic Vs Microservice Architecture"
               description="A brief blog for comparision between monolithic and microservices architecture."
               ghLink="https://focusteck.com/monolithic-vs-microservice-architecture/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <BlogCard
+              imgPath={grpc}
+              isBlog={true}
+              title="Microservices Communication (API-Gateway) Using gRPC"
+              description="A blog with github repos for gRPC communication between microservices."
+              ghLink="https://medium.com/@rehmanakram03/microservices-communication-api-gateway-pattern-using-grpc-a165c7425bfb"
             />
           </Col>
           

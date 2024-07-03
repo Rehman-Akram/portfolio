@@ -7,6 +7,7 @@ import myChatbot from "../../Assets/Projects/personal_chatbot.jpeg";
 import multiplePdfChatbot from "../../Assets/Projects/multiple_pdf_chatbot.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import ProjectCard from "../Cards/Cards";
+import gRPC from "../../Assets/Projects/microservice-architecture.png"
 
 
 function Projects() {
@@ -146,6 +147,17 @@ function Projects() {
               tools='Javascript, React, bootstrap'
               ghLink="https://github.com/Rehman-Akram/portfolio"
               demoLink="https://d263l9642rjt91.cloudfront.net"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={gRPC}
+              isBlog={false}
+              title="Microservices Communication (Api Gateway) Using gRPC"
+              description="This is only backend project. In this project, i have created 5 repos. Api gateway, auth microservice, product microservice, order microservice along with proto buffer repo which is being used in all services to provide interface definitions"
+              tools='Typescript, Nestjs, Postgresql'
+              ghLink="https://github.com/Rehman-Akram/grpc-api-gateway"
             />
           </Col>
           
