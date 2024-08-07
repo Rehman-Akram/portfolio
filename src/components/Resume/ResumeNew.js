@@ -41,6 +41,9 @@ function ResumeNew() {
           <Document file={pdf} loading='' className="d-flex justify-content-center">
             <Page pageNumber={3} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
+          <Document file={pdf} loading='' className="d-flex justify-content-center">
+            <Page pageNumber={4} scale={width > 786 ? 1.7 : 0.6} />
+          </Document>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>

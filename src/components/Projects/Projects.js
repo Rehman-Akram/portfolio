@@ -25,6 +25,15 @@ function Projects() {
         <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
+              title="Project - Loyalty Reward App"
+              description="Worked as Backend Developer + Team Lead - It seamlessly integrates with multiple businesses, providing an easy-to-use platform for managing customer rewards, tracking engagement, and delivering personalized offers. By leveraging the features of the Loyalty Reward App, businesses can effectively enhance customer satisfaction and drive repeat business"
+              tools='React-JS, Nest-JS, Postgresql, AWS, Typeorm, Sockets, Typescript'
+              isAchievement="Focusteck"
+            />
+          </Col>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
               title="Project - Global Care Finder"
               description="Worked as Backend Developer + Team Lead - A comprehensive tool for online appointment and chat system. It provides a patient to book an appointment with doctor as per doctor's available time slots, further doctor and patient can chat once appointment is booked. Patient can find doctor on the basis of location, doctor's expertise, qualification, etc."
               tools='React-JS, Nest-JS, Postgresql, AWS, Typeorm, Sockets, Typescript'

@@ -4,6 +4,8 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
 
 function Footer() {
   let date = new Date();
@@ -40,6 +42,28 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
+
+            <li className="social-icons">
+                <a
+                  href="https://medium.com/@rehmanakram03"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "white" }}
+                >
+                  <FaMedium />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="mailto:rehmanakram03@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "white" }}
+                >
+                  <SiGmail />
+                </a>
+              </li>
             
           </ul>
         </Col>

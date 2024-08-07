@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import eventLoop from "../../Assets/Blogs/Event_loop_node_js.png"
 import microservices from "../../Assets/Blogs/monolithic_microservices_architecture.jpeg"
 import grpc from "../../Assets/Blogs/microservice-architecture.png"
+import communicationPatterns from "../../Assets/Blogs/communication-patterns.png"
 import BlogCard from "../Cards/Cards";
 
 function Blogs() {
@@ -46,6 +47,16 @@ function Blogs() {
               title="Microservices Communication (API-Gateway) Using gRPC"
               description="A blog with github repos for gRPC communication between microservices."
               ghLink="https://medium.com/@rehmanakram03/microservices-communication-api-gateway-pattern-using-grpc-a165c7425bfb"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <BlogCard
+              imgPath={communicationPatterns}
+              isBlog={true}
+              title="Interservice Communication: Synchronous vs Asynchronous Communication"
+              description="A blog, briefly describing synchronous and asynchronous communication patterns in microservices architecture."
+              ghLink="https://medium.com/@rehmanakram03/interservice-communication-synchronous-asynchronous-communication-e22ca8291c15"
             />
           </Col>
           

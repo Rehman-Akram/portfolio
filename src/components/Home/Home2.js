@@ -6,6 +6,8 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6"
+import { SiGmail } from "react-icons/si";
 
 function Home2() {
   return (
@@ -106,6 +108,28 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://medium.com/@rehmanakram03"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaMedium />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="mailto:rehmanakram03@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <SiGmail />
                 </a>
               </li>
               

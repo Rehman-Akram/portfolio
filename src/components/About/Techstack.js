@@ -23,6 +23,7 @@ import {
   SiOpensearch,
   SiElasticsearch,
 } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 function Techstack() {
   return (
@@ -31,6 +32,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
        <SiNestjs />
        <span className="hover-text">Nest Js</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+       <TbBrandNextjs />
+       <span className="hover-text">Next Js</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
