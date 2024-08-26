@@ -4,6 +4,7 @@ import Particle from "../Particle";
 import nestJsBoilerPlate from "../../Assets/Projects/nestjs_boiler_plate.png";
 import expressBoilerPlate from "../../Assets/Projects/expressjs_boiler_plate.png";
 import myChatbot from "../../Assets/Projects/personal_chatbot.jpeg";
+import multipleReadFiles from "../../Assets/Projects/multiple_files_bull_queues.jpg"
 import multiplePdfChatbot from "../../Assets/Projects/multiple_pdf_chatbot.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import ProjectCard from "../Cards/Cards";
@@ -121,6 +122,17 @@ function Projects() {
               description="Created express js boiler plate which maintains proper modular structure and helps to get started with proper structured express app without any time. It contains basic user crud with JWT passport strategy."
               tools='Javascript, Express-js, Postrgresql, Sequelize'
               ghLink="https://github.com/Rehman-Akram/boiler-plate-express"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={multipleReadFiles}
+              isBlog={false}
+              title="Read / Process Multiple Files Async - Nodejs"
+              description="In this project, i created backend, in which one can upload multiple files of any size and can process it asynchronously without blockage of main thread."
+              tools='Bull queues, Bull workers, Redis, Express-js'
+              ghLink="https://github.com/Rehman-Akram/reading-files"
             />
           </Col>
 
