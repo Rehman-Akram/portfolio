@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import aiSummit from "../../Assets/Certificates/AI_summit_Image.jpg"
+import nodeJs from "../../Assets/Certificates/nodejs_certificate.webp"
 import collaboration from "../../Assets/Certificates/Collaboration_ALIGNMENT.jpg"
 import innovativeThinking from "../../Assets/Certificates/Creative_Innovative_Thinking.jpg"
 import managerialExcellence from "../../Assets/Certificates/Developing_Managerial_Excellence.jpg"
@@ -32,6 +33,15 @@ function Certificates() {
           Here are my Certificates and Courses i Completed.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <Card
+              imgPath={nodeJs}
+              isBlog={false}
+              title="Node Js - Internals "
+              description="Successfully completed certificate for Node JS internals. It provides me with in depth understanding of node js internals like libuv, thread pool, event loop, etc."
+              isAchievement="NamasteDev"
+            />
+          </Col>
         <Col md={4} className="project-card">
             <Card
               imgPath={aiSummit}
