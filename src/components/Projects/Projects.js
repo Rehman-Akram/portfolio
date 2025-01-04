@@ -26,6 +26,15 @@ function Projects() {
         <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
+              title="Project - Coleridge"
+              description="Working as Full Stack Developer - It enables researchers to collaborate with each others efficiently using shared resources like folders and datasets."
+              tools='React, Nest-JS, Postgresql, AWS (Fsx, AD, S3, etc.), Typeorm, Typescript, Okta, Shadcn/ui, tailwindCss'
+              isAchievement="Cinnova"
+            />
+          </Col>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
               title="Project - Loyalty Reward App"
               description="Worked as Backend Developer + Team Lead - It seamlessly integrates with multiple businesses, providing an easy-to-use platform for managing customer rewards, tracking engagement, and delivering personalized offers. By leveraging the features of the Loyalty Reward App, businesses can effectively enhance customer satisfaction and drive repeat business"
               tools='React-JS, Nest-JS, Postgresql, AWS, Typeorm, Sockets, Typescript'
