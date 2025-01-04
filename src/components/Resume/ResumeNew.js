@@ -1,94 +1,89 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Tab, Tabs } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import { Container, Row, Button, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import cv from "../../Assets/Rehman_Resume.pdf";
-import shortResume from "../../Assets/Rehman-Akram-Resume.pdf"; // Assuming you have a short resume PDF
+import resume from "../../Assets/Rehman-Akram-Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(window.innerWidth);
+  const [activeTab, setActiveTab] = useState("cv");
+  const [numPages, setNumPages] = useState({ cv: 4, resume: 1 });
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const renderPdfPages = (pdf, pageCount) => {
-    return Array.from(new Array(pageCount), (el, index) => (
+  const onDocumentLoadSuccess =
+    (pdf) =>
+    ({ numPages }) => {
+      setNumPages((prev) => ({ ...prev, [pdf]: numPages }));
+    };
+
+  const renderPdfPages = () => {
+    return Array.from({ length: numPages[activeTab] }, (_, index) => (
       <Document
-        file={pdf}
+        file={activeTab === "cv" ? cv : resume}
         key={`page_${index + 1}`}
-        loading=""
+        onLoadSuccess={onDocumentLoadSuccess(activeTab)}
         className="d-flex justify-content-center"
       >
-        <Page pageNumber={index + 1} scale={width > 786 ? 1.7 : 0.6} />
+        <Page
+          pageNumber={index + 1}
+          scale={width > 786 ? 1.4 : 0.7}
+          renderAnnotationLayer={false}
+        />
       </Document>
     ));
   };
 
   return (
     <div>
-      <Container fluid className="resume-section">
+      <Container fluid className="resume-section px-4 py-5">
         <Particle />
-        <Tabs defaultActiveKey="cv" id="resume-tabs" className="mb-3">
-          <Tab eventKey="cv" title="CV (4 pages)">
-            <Row style={{ justifyContent: "center", position: "relative" }}>
-              <Button
-                variant="primary"
-                href={cv}
-                target="_blank"
-                style={{ maxWidth: "250px" }}
-              >
-                <AiOutlineDownload />
-                &nbsp;Download CV
-              </Button>
-            </Row>
-
-            <Row className="resume">{renderPdfPages(cv, 4)}</Row>
-
-            <Row style={{ justifyContent: "center", position: "relative" }}>
-              <Button
-                variant="primary"
-                href={cv}
-                target="_blank"
-                style={{ maxWidth: "250px" }}
-              >
-                <AiOutlineDownload />
-                &nbsp;Download CV
-              </Button>
-            </Row>
-          </Tab>
-          <Tab eventKey="resume" title="Resume (1 page)">
-            <Row style={{ justifyContent: "center", position: "relative" }}>
-              <Button
-                variant="primary"
-                href={shortResume}
-                target="_blank"
-                style={{ maxWidth: "250px" }}
-              >
-                <AiOutlineDownload />
-                &nbsp;Download Resume
-              </Button>
-            </Row>
-
-            <Row className="resume">{renderPdfPages(shortResume, 1)}</Row>
-
-            <Row style={{ justifyContent: "center", position: "relative" }}>
-              <Button
-                variant="primary"
-                href={shortResume}
-                target="_blank"
-                style={{ maxWidth: "250px" }}
-              >
-                <AiOutlineDownload />
-                &nbsp;Download Resume
-              </Button>
-            </Row>
-          </Tab>
-        </Tabs>
+        <Row className="sticky justify-content-center my-4">
+          <Col xs="auto">
+            <Button
+              variant={activeTab === "cv" ? "primary" : "outline-primary"}
+              onClick={() => setActiveTab("cv")}
+              className="toggle-btn"
+            >
+              Detailed CV
+            </Button>
+          </Col>
+          <Col xs="auto">
+            <Button
+              variant={activeTab === "resume" ? "primary" : "outline-primary"}
+              onClick={() => {
+                setActiveTab("resume");
+              }}
+              className="toggle-btn"
+            >
+              Resume
+            </Button>
+          </Col>
+          <Col xs="auto">
+            <Button
+              variant="primary"
+              href={activeTab === "cv" ? cv : resume}
+              download={
+                activeTab === "cv"
+                  ? "Rehman_Detailed_CV.pdf"
+                  : "Rehman_Resume.pdf"
+              }
+              className="download-btn"
+            >
+              <AiOutlineDownload />
+              &nbsp;Download {activeTab === "cv" ? "Detailed CV" : "Resume"}
+            </Button>
+          </Col>
+        </Row>
+        <Row className="resume-content">{renderPdfPages()}</Row>
       </Container>
     </div>
   );
