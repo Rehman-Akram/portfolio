@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Particle from "../Particle";
 import eventLoop from "../../Assets/Blogs/Event_loop_node_js.png"
+import groqApi from "../../Assets/Blogs/GroqApi.png"
 import microservices from "../../Assets/Blogs/monolithic_microservices_architecture.jpeg"
 import grpc from "../../Assets/Blogs/microservice-architecture.png"
 import communicationPatterns from "../../Assets/Blogs/communication-patterns.png"
@@ -20,6 +21,15 @@ function Blogs() {
           Please find list of my blogs
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <BlogCard
+              imgPath={groqApi}
+              isBlog={true}
+              title="Exploring Groq API with Streamlit by creating a simple chatbot using llama3 llm"
+              description="In this blog, I have explored Groq API (AI Inference) to call open source models as an api. Further explored Streamlit that how it provides quick support for creating UI and deploy on cloud freely. I used Streamlit and Groq API to create simple chatbot using llama3 llm."
+              ghLink="https://medium.com/@rehmanakram03/building-a-chatbot-with-groq-apis-llama-3-and-streamlit-with-deployment-on-cloud-74ef041f60d2"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <BlogCard
               imgPath={eventLoop}
