@@ -3,9 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import nestJsBoilerPlate from "../../Assets/Projects/nestjs_boiler_plate.png";
 import expressBoilerPlate from "../../Assets/Projects/expressjs_boiler_plate.png";
-import myChatbot from "../../Assets/Projects/personal_chatbot.jpeg";
 import multipleReadFiles from "../../Assets/Projects/multiple_files_bull_queues.jpg"
-import multiplePdfChatbot from "../../Assets/Projects/multiple_pdf_chatbot.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import ProjectCard from "../Cards/Cards";
 import gRPC from "../../Assets/Projects/microservice-architecture.png"
@@ -142,29 +140,6 @@ function Projects() {
               description="In this project, i created backend, in which one can upload multiple files of any size and can process it asynchronously without blockage of main thread."
               tools='Bull queues, Bull workers, Redis, Express-js'
               ghLink="https://github.com/Rehman-Akram/reading-files"
-            />
-          </Col>
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={myChatbot}
-              isBlog={false}
-              title="My chatbot"
-              description="Developed chatbot on my personal data using python with streamlit as frontend. This enables user to create their own personal chatbots."
-              ghLink=""
-              demoLink="asd"              
-            />
-          </Col> */}
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={multiplePdfChatbot}
-              isBlog={false}
-              title="Multiple PDFs chatbot"
-              description="In this project, user can train chatbot on manual pdfs. Provide PDFs runtime and bot will answer on the basis of pdfs uploaded. Used streamlit as frontend."
-              tools='Python, streamlit, langchain, FAISS, Gemini'
-              ghLink="https://github.com/Rehman-Akram/chat-with-multiple-pdfs"
-              demoLink="http://54.254.151.238:8501"
             />
           </Col>
 

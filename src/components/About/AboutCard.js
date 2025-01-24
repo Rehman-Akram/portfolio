@@ -12,7 +12,7 @@ function AboutCard() {
             from <span className="purple"> Lahore, Pakistan. &nbsp;</span>
             Working in software development since <i><b className="purple">2021</b></i>.
             <br />
-            I am currently employed as a software developer at Focusteck. 
+            I am currently employed as a software engineer at Cinnova Technologies. 
             <br />
             I have completed Masters (MS) in Computer Sciences at COMSATS 
             Lahore.
