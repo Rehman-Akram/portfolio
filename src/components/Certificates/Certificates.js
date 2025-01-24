@@ -19,7 +19,7 @@ import ownership from "../../Assets/Certificates/Ownership_Execution.jpg"
 import pmp from "../../Assets/Certificates/PMP_TRAINING.jpg"
 import fuel from "../../Assets/Certificates/PTCL_FUEL.jpg"
 import Card from "../Cards/Cards";
-
+import Cinnova_performance_certificate from "../../Assets/Certificates/Cinnova_Performance_Certificate.jpeg"
 
 function Certificates() {
   return (
@@ -33,6 +33,15 @@ function Certificates() {
           Here are my Certificates and Courses i Completed.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <Card
+              imgPath={Cinnova_performance_certificate}
+              isBlog={false}
+              title="Performance Excellence Award"
+              description="Received the Performance Excellence Award at Cinnova's Annual Awards Ceremony (2024-2025)."
+              isAchievement="Cinnova Technologies"
+            />
+          </Col>
         <Col md={4} className="project-card">
             <Card
               imgPath={nodeJs}
