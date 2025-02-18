@@ -20,6 +20,8 @@ import pmp from "../../Assets/Certificates/PMP_TRAINING.jpg"
 import fuel from "../../Assets/Certificates/PTCL_FUEL.jpg"
 import Card from "../Cards/Cards";
 import Cinnova_performance_certificate from "../../Assets/Certificates/Cinnova_Performance_Certificate.jpeg"
+import AI_PRACTITIONER from "../../Assets/Certificates/AWS_AI_Practitioner.webp"
+import AI_EARLY_ADOPTER from "../../Assets/Certificates/AWS_AI_Early_Adoptor_Badge.webp"
 
 function Certificates() {
   return (
@@ -33,6 +35,24 @@ function Certificates() {
           Here are my Certificates and Courses i Completed.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <Card
+              imgPath={AI_PRACTITIONER}
+              isBlog={false}
+              title="AWS AI Practitioner"
+              description="AWS Certified AI Practitioner (AIF-C01). AWS Credential ID: AWS04916757"
+              isAchievement="AWS"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <Card
+              imgPath={AI_EARLY_ADOPTER}
+              isBlog={false}
+              title="AWS AI Early Adopter"
+              description="Received AWS AI Early Adopter Badge from AWS"
+              isAchievement="AWS"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <Card
               imgPath={Cinnova_performance_certificate}
