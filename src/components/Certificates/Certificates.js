@@ -39,6 +39,8 @@ function Certificates() {
             <Card
               imgPath={AI_PRACTITIONER}
               isBlog={false}
+              isCertificate={true}
+              ghLink={'https://www.credly.com/badges/c016aee2-7b6c-4f84-93f4-37a7d0823752/public_url'}
               title="AWS AI Practitioner"
               description="AWS Certified AI Practitioner (AIF-C01). AWS Credential ID: AWS04916757"
               isAchievement="AWS"
@@ -48,6 +50,8 @@ function Certificates() {
             <Card
               imgPath={AI_EARLY_ADOPTER}
               isBlog={false}
+              isCertificate={true}
+              ghLink={'https://www.credly.com/badges/b9aba31b-3038-4ddf-be07-72fff7d70be1/public_url'}
               title="AWS AI Early Adopter"
               description="Received AWS AI Early Adopter Badge from AWS"
               isAchievement="AWS"

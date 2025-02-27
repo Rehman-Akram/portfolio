@@ -18,7 +18,7 @@ function Cards(props) {
         <div className="mt-auto"> {/* Add mt-auto here to push buttons to the bottom */}
           {props.ghLink && (
             <Button variant="primary" href={props.ghLink} target="_blank">
-              <BsGithub /> &nbsp; {props.isBlog ? "Blog" : "GitHub"}
+              <BsGithub /> &nbsp; {props.isBlog ? "Blog" : props.isCertificate ? "Certificate Link": "GitHub"}
             </Button>
           )}
           {!props.isBlog && props.demoLink && (
