@@ -8,6 +8,7 @@ import microservices from "../../Assets/Blogs/monolithic_microservices_architect
 import grpc from "../../Assets/Blogs/microservice-architecture.png"
 import communicationPatterns from "../../Assets/Blogs/communication-patterns.png"
 import BlogCard from "../Cards/Cards";
+import webGatewayInterfaces from "../../Assets/Blogs/Web Gateway Interfaces.png"
 
 function Blogs() {
   return (
@@ -21,6 +22,15 @@ function Blogs() {
           Please find list of my blogs
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <BlogCard
+              imgPath={webGatewayInterfaces}
+              isBlog={true}
+              title="Understanding Web Gateway Interfaces"
+              description="Exploring Web gateway interfaces that how requests from clients are being forwarded to backend application"
+              ghLink="https://medium.com/@rehmanakram03/understanding-web-gateway-interfaces-the-bridge-between-web-servers-and-applications-41b885b7113e"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <BlogCard
               imgPath={groqApi}
