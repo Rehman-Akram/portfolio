@@ -9,6 +9,7 @@ import grpc from "../../Assets/Blogs/microservice-architecture.png"
 import communicationPatterns from "../../Assets/Blogs/communication-patterns.png"
 import BlogCard from "../Cards/Cards";
 import webGatewayInterfaces from "../../Assets/Blogs/Web Gateway Interfaces.png"
+import wsgiAsgi from "../../Assets/Blogs/wsgi-vs-asgi.png"
 
 function Blogs() {
   return (
@@ -22,6 +23,15 @@ function Blogs() {
           Please find list of my blogs
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <BlogCard
+              imgPath={wsgiAsgi}
+              isBlog={true}
+              title="WSGI & ASGI"
+              description="A blog explaining the difference between WSGI and ASGI, and how they work."
+              ghLink="https://medium.com/@rehmanakram03/wsgi-asgi-asyncio-library-7c3b4a4a247c"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <BlogCard
               imgPath={webGatewayInterfaces}
